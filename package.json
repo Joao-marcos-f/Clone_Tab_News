@@ -1,0 +1,24 @@
+{
+  "name": "clone_tab_news",
+  "version": "1.0.0",
+  "description": "Esse é um pequeno projeto desenvolvido no curso.dev",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-marcos-f/Clone_Tab_News.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Joao-marcos-f/Clone_Tab_News/issues"
+  },
+  "homepage": "https://github.com/Joao-marcos-f/Clone_Tab_News#readme",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -10,12 +10,15 @@ async function query(queryobject) {
   });
 
   await client.connect();
-  const result = await client.query(queryobject);
-  await client.end();
-
-  return result;
+  try {
+    const result = await client.query(queryobject);
+    return result;
+  } catch (err) {
+    console.error("Database query error:", err);
+  } finally {
+    await client.end();
+  }
 }
-
 export default {
   query: query,
 };

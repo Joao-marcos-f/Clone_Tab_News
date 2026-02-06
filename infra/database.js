@@ -8,9 +8,9 @@ async function query(queryobject) {
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DB,
     ssl:
-      process.env.NODE_ENV !== "development"
-        ? true
-        : { rejectUnauthorized: false, require: false },
+      process.env.NODE_ENV === "development"
+        ? false
+        : { rejectUnauthorized: false, require: true },
   });
 
   try {

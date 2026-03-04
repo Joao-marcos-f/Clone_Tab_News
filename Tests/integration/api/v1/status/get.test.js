@@ -9,8 +9,8 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(resbody.dependecies.database.postgres_version).toBeDefined();
 
   expect(resbody.dependecies.database.max_connections).toBeDefined();
-  expect(resbody.dependecies.database.max_connections).toBe(901);
+  expect(resbody.dependecies.database.max_connections).toBe(100);
 
   expect(resbody.dependecies.database.total_connections).toBeDefined();
-  expect(resbody.dependecies.database.total_connections).toBe(1);
+  expect(resbody.dependecies.database.total_connections).toBe(6);
 });

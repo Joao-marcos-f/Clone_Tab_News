@@ -36,7 +36,7 @@ function Home() {
         mim e me apoiar nessa jornada."
       </blockquote>
 
-      <p>Obrigado por visitar minha página inicial! 🚀</p>
+      <p>Obrigado por visitar minha página inicial 🚀</p>
     </>
   );
 }
